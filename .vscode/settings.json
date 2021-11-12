@@ -1,0 +1,15 @@
+{
+    "explorer.openEditors.visible": 10,
+    "python.testing.pytestArgs": [
+        "tasks"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tasks",
+        "-p",
+        "*test*.py"
+    ]
+}

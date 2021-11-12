@@ -1,0 +1,13 @@
+{% extends "task/layout.html" %}
+
+{% block body%}
+<body>
+    <ul>
+        {% for request.session in tasks%}
+            <li>{{request.session}}</li>
+            {% empty %}
+            <li><h2>no task<h2></li>
+        {% endfor %}
+    </ul>
+    <a href= "{% url 'add' %}"> jump to page</a>
+{% endblock %}
